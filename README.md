@@ -9,3 +9,5 @@ ExpressCart_API is a Node.js and Express-based API for building a robust E-comme
 * Shopping cart functionality.
 * Order processing.
 * Secure and efficient data storage using    MongoDB.
+
+## API Endpoints 
