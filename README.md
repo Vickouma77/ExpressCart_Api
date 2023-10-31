@@ -1,4 +1,11 @@
-# ExpressCart_Api
+<p align="center">
+    <img src="https://img.shields.io/github/license/Vickouma77/ExpressCart_Api" />
+    <img src="https://img.shields.io/github/last-commit/Vickouma77/ExpressCart_Api" />
+    <img src="https://img.shields.io/github/issues/Vickouma77/ExpressCart_Api" />
+    <img src="https://img.shields.io/github/forks/Vickouma77/ExpressCart_Api" />
+    <img src="https://img.shields.io/github/stars/Vickouma77/ExpressCart_Api" />
+</p>
+
 ExpressCart_API is a Node.js and Express-based API for building a robust E-commerce platform. It utilizes MongoDB as the database for seamless data management.
 
 <p align="center">
