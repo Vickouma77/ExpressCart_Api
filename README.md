@@ -103,6 +103,6 @@ $ npm run test
 
 MIT License
 
----
+## Author
 
-> GitHub [@Vickouma77](https://github.com/Vickouma77)
+Vickouma77
