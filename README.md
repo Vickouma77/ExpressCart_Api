@@ -102,7 +102,3 @@ $ npm run test
 ## License
 
 MIT License
-
-## Author
-
-Vickouma77
