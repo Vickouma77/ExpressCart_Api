@@ -94,11 +94,3 @@ $ npm run dev
 
 ### Running the Tests
 
-```sh
-$ npm run test
-```
-
-
-## License
-
-MIT License
