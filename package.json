@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/Vickouma77/ExpressCart_Api.git"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +20,8 @@
   "devDependencies": {
     "eslint": "^8.55.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.0"
+    "eslint-plugin-import": "^2.29.0",
+    "nodemon": "^3.0.2"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
