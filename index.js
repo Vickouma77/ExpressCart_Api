@@ -8,16 +8,18 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 
-/* Connect to MongoDB */
-try {
-  await mongoose.connect(process.env.DB_CONNECT, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+
+/*connect to MongoDB */
+mongoose.connect(process.env.DB_CONNECT, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+  .then(() => {
+    console.log("Successfully connected to MongoDB.");
+  })
+  .catch((error) => {
+    console.error("Error connecting to MongoDB:", error);
   });
-  console.log("Successfully connected to MongoDB.");
-} catch (error) {
-  console.error("Error connecting to MongoDB:", error);
-}
 
 
 /* Listen to the server */
