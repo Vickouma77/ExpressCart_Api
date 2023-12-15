@@ -34,9 +34,9 @@ ExpressCart_API is a Node.js and Express-based API for building a robust E-comme
 
 | Endpoint | Functionality | Access |
 | --- | --- | --- |
-| POST /api/users/login | Logs a user in | Public |
-| POST /api/users | Registers a new user | Public |
-| GET /api/users/profile | Gets a user's profile | Private |
+| POST /api/login | Logs a user in | Public |
+| POST /api/register | Registers a new user | Public |
+| GET /api/profile | Gets a user's profile | Private |
 | PUT /api/users/profile | Updates a user's profile | Private |
 | GET /api/users | Gets all users | Private/Admin |
 | DELETE /api/users/:id | Deletes a user | Private/Admin |
