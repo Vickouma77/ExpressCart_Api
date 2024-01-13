@@ -92,12 +92,6 @@ $ npm install
 $ npm run dev
 ```
 
-### Running the Tests
-    
-    ```sh
-    $ npm run test
-    ```
-
 ### License
 
 This project is free to use for anyone feel free to clone it and use it as you like.
