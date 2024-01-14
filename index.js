@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const authRoute = require('./routes/auth');
 
 dotenv.config();
 
@@ -20,6 +21,12 @@ mongoose.connect(process.env.DB_CONNECT, {
   .catch((error) => {
     console.error("Error connecting to MongoDB:", error);
   });
+
+  /*Middleware */
+app.use(express.json());
+
+/* Route Middleware */
+app.use('/api/auth', authRoute);
 
 
 /* Listen to the server */
