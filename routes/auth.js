@@ -9,13 +9,29 @@
   but we’re going to use email and password.
 */
 const router = require('express').Router();
-const bcrypt = require('bycryptjs');
+const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
 const User = require('../models/user');
 
 /* POST register route */
-router.post('/register', (req, res) => {}) 
+router.post('/register', async (req, res) => {
+  try {
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(req.body.password, salt);
+
+    const newUser = new User({
+      name: req.body.name,
+      email: req.body.email,
+      password: hashedPassword,
+    })
+
+    const user = newUser.save();
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+}) 
 
 
 /*POST login route */
@@ -26,4 +42,4 @@ router.post('/login', (req, res) => {})
 router.put('/update', passport.authenticate('jwt', {session: false}), (req, res) => {})
 
 
-modules.exports = router;
+module.exports = router;
